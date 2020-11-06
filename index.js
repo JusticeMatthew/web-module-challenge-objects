@@ -53,9 +53,9 @@ export const burger = {
   category: "Lunch", 
   discount: function(string) {
     if (string === "teacher" || string === "student") {
-      return burger.price - (18 * .25);
+      return burger.price - (burger.price * .25);
     } else {
-      return burger.price - (18 * .10);
+      return burger.price - (burger.price * .10);
     }
   }
 }
@@ -123,7 +123,7 @@ Use the getLastReview function below to do the following:
 */
 
 function getLastReview(array) {
-  let lastObject = array[array.length - 1]
+  let lastObject = array[array.length - 1];
   return `${lastObject.name} gave the restaurant a ${lastObject.rating} star review, and their feedback was: ${lastObject.feedback}`
 } 
 
@@ -146,7 +146,7 @@ Use the getReviewsByRating function below to do the following:
  function getReviewByRating(array, int) {
   let newArray = [];
     for (let i = 0; i < array.length; i++) {
-      if (array[i].rating >= int && array[i].rating < intq + 1) {
+      if (array[i].rating >= int && array[i].rating < int + 1) {
         newArray.push(array[i]);  
       }
     }
