@@ -143,10 +143,10 @@ Use the getReviewsByRating function below to do the following:
   ]
 */
 
- function getReviewByRating(array, rating) {
+ function getReviewByRating(array, int) {
   let newArray = [];
-    for (let i = 0; i < array.lenth; i++) {
-      if (array[i].rating >= rating && array[i].rating < rating + 1) {
+    for (let i = 0; i < array.length; i++) {
+      if (array[i].rating >= int && array[i].rating < intq + 1) {
         newArray.push(array[i]);  
       }
     }
